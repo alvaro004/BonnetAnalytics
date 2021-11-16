@@ -1,0 +1,107 @@
+.services {
+    display: grid;
+    grid-template-areas: 
+        ". s-left s-left s-left s-left s-left s-left s-left s-right s-right s-right s-right s-right .";
+    grid-template-columns: 11vw repeat(12, 6.5vw) 11vw;
+    background-color: #EAEAEA;
+}
+
+.services .left-side {
+    grid-area: s-left;
+}
+
+.services .right-side {
+    grid-area: s-right;
+}
+
+.services .left-side,
+.services .right-side {
+    margin-top: clamp(3vh, 1rem, 11vh);
+}
+
+.services .left-side ul {
+    display: grid;
+    grid-template-areas: 
+        ". first first first . . ."
+        ". first first first fourth fourth fourth"
+        "second second second . fourth fourth fourth"
+        "second second second third third third ."
+        ". . . third third third .";
+    grid-template-columns: repeat(7, 6.5vw);
+    grid-template-rows: repeat(5, 8.5vw);
+    list-style: none;
+}
+
+.services .left-side ul li,
+.services .left-side ul li:nth-of-type(1) div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 2em 4em;
+    background: #FFFFFF;
+    border-color: rgba(00, 00, 00, 16%);
+}
+
+.services .left-side ul .bg-image {
+    background: url('../assets/img/services-products/first-background.png') no-repeat;
+    background-size: 100% 100%;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    width: calc(6.5vw * 3);
+    height: calc(8.5vw * 2);
+    position: absolute;
+    z-index: 0;
+}
+
+.services .left-side ul li h2 {
+    font-size: clamp(0.1vw, 1.2em, 1.4vw);
+    margin: 0.64em auto 0.24em;
+}
+
+.services .left-side ul li p {
+    line-height: 1.5em;
+    font-size: clamp(0.7vw, 0.3rem, 0.9vw);
+    text-align: center;
+    margin: 0.5em auto 0.64em;
+}
+
+.services .left-side ul li button {
+    border: 2px #EEEEEE solid;
+    font-size: 0.74rem;
+    font-weight: bold;
+    padding: 0.8em 1.6em;
+    border-radius: 21.93px;
+    text-transform: uppercase;
+    background: transparent;
+}
+
+.services .left-side ul li:nth-of-type(1) {
+    grid-area: first;
+    color: #FFFFFF;
+}
+
+.services .left-side ul li:nth-of-type(1) div:nth-of-type(2) {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    padding: 2em 4em;
+    max-width: calc(6.5vw * 3);
+}
+
+.services .left-side ul li:nth-of-type(1) button {
+    color: white;
+}
+
+.services .left-side ul li:nth-of-type(2) {
+    grid-area: second;
+}
+
+.services .left-side ul li:nth-of-type(3) {
+    grid-area: third;
+}
+
+.services .left-side ul li:nth-of-type(4) {
+    grid-area: fourth;
+}

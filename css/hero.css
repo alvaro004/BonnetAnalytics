@@ -1,0 +1,113 @@
+.hero {
+    display: grid;
+    grid-template-areas: 
+        "left left left left right right right right social"
+        "mouse mouse mouse mouse mouse mouse mouse mouse mouse";
+    background-color: #EAEAEA;
+}
+
+.hero .headline, .hero .left-side p, .hero .social {
+    font-family: 'Manjari', sans-serif;
+}
+
+.hero .headline {
+    font-size: clamp(12px, 1vw, 1rem);
+}
+
+.hero h1, .hero .hero-cta {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 8rem, 7vw);
+    color: #272a39;
+    line-height: 1.1em;
+}
+
+.hero .left-side, .hero .right-side {
+    box-sizing: border-box;
+    padding-top: clamp(8vh, 8rem, 20vh);
+}
+
+.hero .left-side {
+    grid-area: left;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding-left: 6rem;
+}
+
+.hero .left-side p {
+    color: #8f92a1;
+    padding: 1rem 0;
+    font-size: clamp(12px, 1vw, 1rem);
+}
+
+.hero .right-side {
+    grid-area: right;
+}
+
+.hero .right-side img {
+    max-width: 41vw;
+}
+
+.hero .hero-cta {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.5em;
+    align-items: center;
+    padding: 1em 1.75em;
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+    font-size: clamp(12px, 1vw, 1rem);
+    background-color: #eaeaea;
+    color: #272A39;
+    margin-top: 2rem;
+    box-shadow: 0px 1px 9px -2px rgba(255,255,255,1);
+    -webkit-box-shadow: 0px 1px 9px -2px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 1px 9px -2px rgba(255,255,255,1);
+    transition: 0.5s;
+}
+
+.hero .hero-cta:hover {
+    background-color: white;
+    box-shadow: 0px 1px 9px -2px rgba(39, 42, 57,0.8);
+    -webkit-box-shadow: 0px 1px 9px -2px rgba(39, 42, 57,0.8);
+    -moz-box-shadow: 0px 1px 9px -2px rgba(39, 42, 57,0.8);
+}
+
+.hero .hero-cta img {
+    margin-top: 0.1em;
+    height: 1em;
+}
+
+.hero .social {
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    justify-content: center;
+    color: #272A39;
+}
+
+.hero .social span {
+    transform: rotate(90deg) translateX(30%);
+}
+
+.hero .mousedown-icon {
+    grid-area: mouse;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .mousedown-icon img {
+    position: relative;
+}
+
+.hero .mousedown-icon img:last-child {
+    top: -5px;
+    left: -15px;
+}
