@@ -1,113 +1,142 @@
 .hero {
-    display: grid;
-    grid-template-areas: 
-        "left left left left right right right right social"
-        "mouse mouse mouse mouse mouse mouse mouse mouse mouse";
-    background-color: #EAEAEA;
+	display: grid;
+	grid-template-areas:
+		'left left left left right right right right social'
+		'mouse mouse mouse mouse mouse mouse mouse mouse mouse';
+	background-color: #eaeaea;
 }
 
-.hero .headline, .hero .left-side p, .hero .social {
-    font-family: 'Manjari', sans-serif;
+.hero .headline,
+.hero .left-side p,
+.hero .social {
+	font-family: 'Manjari', sans-serif;
 }
 
 .hero .headline {
-    font-size: clamp(12px, 1vw, 1rem);
+	display: flex;
 }
 
-.hero h1, .hero .hero-cta {
-    font-family: 'Roboto', sans-serif;
+.hero .headline .line-container {
+	width: 70px;
+	margin: 5px 10px 0 5px;
+}
+.hero .headline .line {
+	border-bottom: 1px solid #3f4d5e;
+	display: block;
+}
+
+.hero .headline {
+	font-size: clamp(12px, 1vw, 1rem);
+}
+
+.hero h1,
+.hero .hero-cta {
+	font-family: 'Roboto', sans-serif;
 }
 
 .hero h1 {
-    font-size: clamp(2rem, 8rem, 7vw);
-    color: #272a39;
-    line-height: 1.1em;
+	font-size: clamp(2rem, 8rem, 7vw);
+	color: #272a39;
+	line-height: 1.1em;
 }
 
-.hero .left-side, .hero .right-side {
-    box-sizing: border-box;
-    padding-top: clamp(8vh, 8rem, 20vh);
+.hero .left-side,
+.hero .right-side {
+	box-sizing: border-box;
+	padding-top: clamp(8vh, 8rem, 20vh);
 }
 
 .hero .left-side {
-    grid-area: left;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    padding-left: 6rem;
+	grid-area: left;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	padding-left: 6rem;
 }
 
 .hero .left-side p {
-    color: #8f92a1;
-    padding: 1rem 0;
-    font-size: clamp(12px, 1vw, 1rem);
+	color: #8f92a1;
+	padding: 1rem 0;
+	font-size: clamp(12px, 1vw, 1rem);
 }
 
 .hero .right-side {
-    grid-area: right;
+	grid-area: right;
 }
 
 .hero .right-side img {
-    max-width: 41vw;
+	max-width: 41vw;
 }
 
 .hero .hero-cta {
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 0.5em;
-    align-items: center;
-    padding: 1em 1.75em;
-    border: none;
-    border-radius: 5px;
-    width: max-content;
-    font-size: clamp(12px, 1vw, 1rem);
-    background-color: #eaeaea;
-    color: #272A39;
-    margin-top: 2rem;
-    box-shadow: 0px 1px 9px -2px rgba(255,255,255,1);
-    -webkit-box-shadow: 0px 1px 9px -2px rgba(255,255,255,1);
-    -moz-box-shadow: 0px 1px 9px -2px rgba(255,255,255,1);
-    transition: 0.5s;
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 0.5em;
+	align-items: center;
+	padding: 1em 1.75em;
+	border: none;
+	border-radius: 5px;
+	width: max-content;
+	font-size: clamp(12px, 1vw, 1rem);
+	background-color: #eaeaea;
+	color: #272a39;
+	margin-top: 2rem;
+	box-shadow: 0px 1px 9px -2px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 1px 9px -2px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0px 1px 9px -2px rgba(255, 255, 255, 1);
+	transition: 0.5s;
 }
 
 .hero .hero-cta:hover {
-    background-color: white;
-    box-shadow: 0px 1px 9px -2px rgba(39, 42, 57,0.8);
-    -webkit-box-shadow: 0px 1px 9px -2px rgba(39, 42, 57,0.8);
-    -moz-box-shadow: 0px 1px 9px -2px rgba(39, 42, 57,0.8);
+	cursor: pointer;
+	background-color: white;
+	box-shadow: 0px 1px 9px -2px rgba(39, 42, 57, 0.8);
+	-webkit-box-shadow: 0px 1px 9px -2px rgba(39, 42, 57, 0.8);
+	-moz-box-shadow: 0px 1px 9px -2px rgba(39, 42, 57, 0.8);
 }
 
 .hero .hero-cta img {
-    margin-top: 0.1em;
-    height: 1em;
+	margin-top: 0.1em;
+	height: 1em;
 }
 
 .hero .social {
-    grid-area: social;
-    display: flex;
-    flex-direction: column;
-    gap: 10vh;
-    justify-content: center;
-    color: #272A39;
+	grid-area: social;
+	display: flex;
+	flex-direction: column;
+	gap: 12vh;
+	justify-content: center;
+	color: #272a39;
 }
 
-.hero .social span {
-    transform: rotate(90deg) translateX(30%);
+.hero .social .fb-container,
+.insta-conatiner,
+.twt-container {
+	transform: rotate(90deg) translateX(30%);
+}
+
+.hero .social span:hover {
+	border-bottom: 1px solid black;
+	cursor: pointer;
 }
 
 .hero .mousedown-icon {
-    grid-area: mouse;
-    height: 8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	grid-area: mouse;
+	height: 8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero .mousedown-icon a {
+	text-decoration: none;
 }
 
 .hero .mousedown-icon img {
-    position: relative;
+	position: relative;
 }
 
 .hero .mousedown-icon img:last-child {
-    top: -5px;
-    left: -15px;
+	top: -18px;
+	left: -19px;
 }
