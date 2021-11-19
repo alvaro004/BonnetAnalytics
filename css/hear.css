@@ -1,0 +1,124 @@
+.hear {
+	background-color: #f5f5f5;
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+}
+
+.hear .left-side {
+	margin: 8rem 1rem 1rem 8rem;
+}
+
+.hear .left-side h1,
+.hear .left-side p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.hear .left-side h1 {
+	font-weight: bold;
+	font-size: 55px;
+	color: #272a39;
+}
+
+.hear .left-side p {
+	color: rgba(39, 42, 57, 0.5);
+	margin: 2rem 0 4rem 0;
+}
+
+.hear .left-side .arrows-container {
+	display: flex;
+}
+
+.hear .left-side .arrows-container a {
+	background-color: rgb(39, 42, 57);
+	width: 100px;
+	height: 50px;
+	margin: 0 1rem 0 0;
+}
+
+.hear .left-side .arrows-container .left-arrow-1,
+.hear .left-side .arrows-container .right-arrow-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hear .left-side .arrows-container .left-arrow-1 .left-arrow {
+	width: 20px;
+}
+
+.hear .left-side .arrows-container .right-arrow-1 .right-arrow {
+	width: 20px;
+	transform: rotate(180deg);
+}
+
+.hear .left-side .arrows-container a:hover {
+	background-color: rgba(39, 42, 57, 0.5);
+}
+
+.hear .left-side .line-sections {
+	margin-top: 6rem;
+}
+
+.hear .left-side .line-sections span:nth-of-type(n) {
+	margin-right: 1rem;
+}
+
+/*------------------------- RIGHT SIDE SECTION ------------------- */
+
+.hear .right-side {
+	margin-top: 2rem;
+}
+
+.hear .right-side .main-container {
+	background-color: #e6e6e8;
+	height: 38rem;
+	/* padding: 10rem 0 10rem 0; */
+	margin-right: 11rem;
+}
+
+.hear .right-side .main-container .text-area-container {
+	width: 80%;
+	margin: auto;
+	padding-top: 4rem;
+}
+
+.hear .right-side .main-container .text-area-container .quote {
+	font-size: 60px;
+	/* font-family: 'Roboto', sans-serif; */
+	font-family: 'Montagu Slab', serif;
+	font-weight: bold;
+	color: #272a39;
+}
+
+.hear .right-side .main-container .text-area-container .quote-right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.hear .right-side .main-container .text-area-container h2,
+.hear .right-side .main-container .text-area-container p {
+	font-family: 'Roboto', sans-serif;
+	color: #272a39;
+}
+
+.hear .right-side .main-container .text-area-container p {
+	color: rgba(39, 42, 57, 0.5);
+	margin: 3rem 0 3rem 0;
+}
+
+.hear .right-side .main-container .text-area-container .testimonial-person {
+	display: flex;
+}
+
+.hear .right-side .main-container .text-area-container .testimonial-person img {
+	margin-right: 1rem;
+}
+
+.hear .right-side .main-container .text-area-container .testimonial-person h3 {
+	font-weight: bold;
+	color: #272a39;
+}
+
+.hear .right-side .main-container .text-area-container .testimonial-person span {
+	color: rgba(39, 42, 57, 0.5);
+}
