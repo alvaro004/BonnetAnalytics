@@ -3,8 +3,8 @@
 	grid-template-areas:
 		'about-left about-right'
 		'about-bottom about-bottom';
-	/* background-color: #eaeaea; */
 	background-color: #f5f5f5;
+	color: #272a39;
 }
 
 .about .left-side,
@@ -14,7 +14,6 @@
 
 .about .left-side {
 	box-sizing: border-box;
-	/* padding-top: clamp(4vh, 3.5rem, 12vh); */
 	padding-left: 6rem;
 	grid-area: about-left;
 	width: 40vw;
@@ -32,14 +31,12 @@
 
 .about .left-side h1 {
 	font-size: 4rem;
-	color: #272a39;
 	font-family: 'Roboto', sans-serif;
 }
 
 .about .left-side p {
 	font-size: 1rem;
 	line-height: 1.75rem;
-	color: #272a39;
 	font-family: 'regular', sans-serif;
 	justify-content: center;
 	margin-top: 0.5rem;
@@ -72,7 +69,6 @@
 	max-height: 1em;
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
-	/* font-size: 24px; */
 	color: #425a7a;
 }
 

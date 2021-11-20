@@ -35,7 +35,6 @@ footer {
 
 .footer-main-container .left-right-side .right-side {
 	margin-top: 3rem;
-	/* padding-left: 7rem; */
 }
 
 .footer-main-container .left-right-side .right-side form input {
@@ -54,7 +53,6 @@ footer {
 }
 
 .footer-main-container .left-right-side .right-side form button {
-	/* margin-top: 2rem; */
 	margin: 1rem 0;
 	padding: 0.6rem;
 	border: none;
