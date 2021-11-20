@@ -1,0 +1,105 @@
+.contact-us {
+	background-color: #f5f5f5;
+}
+.contact-us .main-container {
+	width: 90%;
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+.contact-us .main-container header h2 {
+	font-size: 50px;
+	font-weight: bold;
+	color: #153556;
+	padding: 2rem 0 2rem 4rem;
+}
+
+.contact-us .main-container header h2 .green {
+	color: #6cc57c;
+}
+
+.contact-us .main-container .contact-continer {
+	display: flex;
+}
+
+.contact-us .main-container .contact-continer .contact-txt img {
+	height: 200px;
+	width: 2rem;
+}
+.contact-us .main-container .contact-continer .contact-txt .rotate-txt {
+	transform: rotate(-90deg) translateX(-90%);
+}
+
+.contact-us .main-container .contact-continer .contact-txt .rotate-txt span {
+	color: rgba(57, 57, 57, 0.5);
+}
+
+.contact-us .main-container .contact-continer .contact-txt img {
+	transform: translate(40px, -40px);
+}
+
+.contact-us .main-container .contact-continer .contact-form {
+	margin: 0 4rem;
+}
+
+.contact-us .main-container .contact-continer .contact-form .name-email-box #name {
+	width: 20rem;
+	margin-right: 4rem;
+}
+
+.contact-us .main-container .contact-continer .contact-form .name-email-box #email {
+	width: 40rem;
+}
+
+.contact-us .main-container .contact-continer .contact-form .name-email-box {
+	margin-bottom: 1.5rem;
+}
+
+.contact-us .main-container .contact-continer .contact-form form input {
+	border: none;
+	background-color: transparent;
+	padding: 0.5rem 0;
+	border-bottom: 1px solid;
+	font-size: 15px;
+}
+
+.contact-us .main-container .contact-continer .contact-form form input:hover {
+	border-bottom: 1px solid rgba(57, 57, 57, 0.5);
+}
+
+.contact-us .main-container .contact-continer .contact-form form input:focus {
+	outline: none;
+}
+
+.contact-us .main-container .contact-continer .contact-form .message-box input {
+	width: 64.4rem;
+}
+
+.contact-us .main-container .contact-continer .contact-form .btn-box {
+	display: flex;
+	justify-content: end;
+}
+
+.contact-us .main-container .contact-continer .contact-form .btn-box button {
+	margin-top: 2rem;
+	padding: 0.8rem;
+	border: none;
+	width: 8rem;
+	background: #eaeaea;
+	cursor: pointer;
+}
+.contact-us .main-container .contact-continer .contact-form .btn-box button:hover {
+	background-color: white;
+	box-shadow: 0px 1px 9px -2px rgba(39, 42, 57, 0.8);
+}
+
+.contact-us .main-container .contact-social {
+	transform: translate(35px, -15px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-us .main-container .contact-social span {
+	margin-bottom: 1.5rem;
+}
