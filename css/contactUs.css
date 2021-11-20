@@ -1,10 +1,13 @@
 .contact-us {
 	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: column;
 }
 .contact-us .main-container {
 	width: 90%;
 	margin: auto;
 	font-family: 'Roboto', sans-serif;
+	padding-bottom: 1rem;
 }
 
 .contact-us .main-container header h2 {
@@ -43,12 +46,13 @@
 }
 
 .contact-us .main-container .contact-continer .contact-form .name-email-box #name {
-	width: 20rem;
-	margin-right: 4rem;
+	width: 20vw;
+	/* margin-right: 4rem; */
+	margin: 0 4rem 2rem 0;
 }
 
 .contact-us .main-container .contact-continer .contact-form .name-email-box #email {
-	width: 40rem;
+	width: 40vw;
 }
 
 .contact-us .main-container .contact-continer .contact-form .name-email-box {
@@ -72,7 +76,7 @@
 }
 
 .contact-us .main-container .contact-continer .contact-form .message-box input {
-	width: 64.4rem;
+	width: 65vw;
 }
 
 .contact-us .main-container .contact-continer .contact-form .btn-box {
@@ -87,6 +91,7 @@
 	width: 8rem;
 	background: #eaeaea;
 	cursor: pointer;
+	transition: 0.5s ease-in-out;
 }
 .contact-us .main-container .contact-continer .contact-form .btn-box button:hover {
 	background-color: white;

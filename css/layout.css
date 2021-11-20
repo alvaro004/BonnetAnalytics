@@ -50,6 +50,7 @@ body {
 }
 
 main {
+	min-height: 100vh;
 	position: relative;
 	scroll-behavior: smooth;
 	overflow-y: scroll;

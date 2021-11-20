@@ -110,8 +110,15 @@
 	display: flex;
 }
 
-.hear .right-side .main-container .text-area-container .testimonial-person img {
+.hear .right-side .main-container .text-area-container .testimonial-person .image-div {
+	background: url('/assets/img/hear/Ellipse36.png');
 	margin-right: 1rem;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .hear .right-side .main-container .text-area-container .testimonial-person h3 {
